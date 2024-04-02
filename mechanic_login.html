@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal | www.codingnepalweb.com-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Login and Registration</title>
+    <link rel="stylesheet" href="css_files/mlogin.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/6823/6823491.png" sizes="100*100">
+<style>
+     /* Style the navbar */
+  .navbar {
+            overflow: hidden;
+            background-color: #ffffff;
+            margin-top: 20px ;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Left-aligned label */
+        .label {
+            float: left;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            padding: 4px 86px;
+            font-weight: bolder;
+            margin-left: 5%;
+        }
+       
+
+        /* Right-aligned attributes */
+        .attributes {
+            float: right;
+            margin-right: 10%;
+        }
+
+        /* Style for attribute links */
+        .attributes a {
+            font-size: 14px;
+            color: #859098;
+            font-weight: 500;
+            text-align: center;
+            padding: 35px 10px;
+            text-decoration: none;
+            margin-right: 30px;
+        }
+</style>
+   </head>
+<body>
+    <div class="navbar">
+        <div class="label">Highway Fix it <span style="color:red;"> & Connect</span></div>
+        <div class="attributes">
+            <a href="index.jsp">HOME</a> 
+            <a href="FAQ.html">FAQ</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="mechanic_login.html">Login</a>
+        </div>
+      
+    </div>
+    <br>
+    <div class="background">
+        <br>
+  <div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+      <div class="front">
+        <img src="https://www.autotrainingcentre.com/wp-content/uploads/2015/06/automotive-service-advisor.png" alt="">
+        
+      </div>
+      <div class="back">
+      </div>
+    </div>
+    <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+            <div class="title">Login</div>
+            <form action="MechanicLogin" method="POST">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="email" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" placeholder="Enter your password" required>
+              </div>
+              <div class="text"><a href="mechanicForgotPassword.jsp">Forgot password?</a></div>
+              <div class="button input-box">
+                <input type="submit" value="Sumbit">
+              </div>
+              <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div>
+            </div>
+        </form>
+      </div>
+        <div class="signup-form">
+          <div class="title">Signup</div>
+        <form action="MechanicAdd" method="post" enctype="multipart/form-data">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input type="text" name="name" placeholder="Enter your name" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="email"  placeholder="Enter your email" required>
+              </div>
+
+              <div class="input-box">
+                 <i class="fa-solid fa-phone"></i>
+                <input type="text" name="mobile1" placeholder="Enter your first Mobile Number" required>
+              </div>
+
+				<div class="input-box">
+                 <i class="fa-solid fa-phone"></i>
+                <input type="text" name="mobile2" placeholder="Enter your second Mobile Number" required>
+              </div>
+
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" placeholder="Enter your password" required>
+              </div> 
+              <div class="input-box">
+                 <i class="fa-solid fa-house"></i>
+                <input type="text" name="area" placeholder="Enter your Area" required>
+              </div>
+              <div class="input-box">
+             <i class="fa-solid fa-star"></i>
+                <input type="text" name="exprience" placeholder="Enter your Experience" required>
+              </div>
+              <div class="input-box">
+                  <i class="fa-solid fa-car"></i>
+                <input type="text" name="specialist" placeholder="Enter Specialist" required>
+              </div> 
+                <div class="input-box">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                <input type="text" name="map" placeholder="Enter google map link" autocomplete="off" required>
+              </div> 
+              <input type="hidden" name="status" value="inactive">
+
+                <div class="custom-file">
+                  <i class="fa-solid fa-id-card" style="color:red;"></i>
+                  <input type="file"name="govt_id"  class="custom-file-input" id="inputGroupFile01">
+                  <label class="custom-file-label" for="inputGroupFile01">Govt Id</label>
+                </div>
+              <br>  
+              
+                <div class="custom-file">
+                  <i class="fa-solid fa-image" style="color:red;"></i>
+                  <input type="file" name="profile" class="form-control">
+                  <label class="custom-file-label" for="inputGroupFile01">Profile</label>
+                </div>
+             
+              <div class="button input-box">
+                <input type="submit" value="Sumbit">
+              </div>
+              <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
+            </div>
+      </form>
+    </div>
+    </div>
+    </div>
+  </div>
+  <br>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+ 
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Registration form</title>
+      <link rel="stylesheet" href="css_files/NewFile.css">
+  </head>
+  <body>
+    <div class="center">
+      <h1>Registration</h1>
+      <form action="Registerservlet" method="post">
+
+        <div class="txt_field">
+            <input type="text" name="name" required>
+          <span></span>
+          <label>Name</label>
+        </div>
+
+        <div class="txt_field">
+            <input type="email" name="email" required>
+          <span></span>
+          <label>Email</label>
+        </div> 
+        <div class="txt_field">
+            <input type="password" name="password" required>
+          <span></span>
+          <label>Password</label>
+        </div>
+        <div class="txt_field">
+            <input type="text" name="mobile" required>
+              <span></span>
+              <label>Mobile</label>
+            </div>
+        <div class="pass"></div>
+        <input type="submit" value="Registration">
+        <div class="pass"></div>
+      </form>
+    </div>
+
+  </body>
+</html>
